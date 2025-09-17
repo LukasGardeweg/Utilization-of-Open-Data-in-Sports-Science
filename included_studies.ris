@@ -1,0 +1,880 @@
+TY  - JOUR
+TI  - Expected goals in football: Improving model performance and demonstrating value
+AU  - Mead, James
+AU  - O’Hare, Anthony
+AU  - McMenemy, Paul
+T2  - PLOS ONE
+A2  - Muazu Musa, Rabiu
+AB  - Recently, football has seen the creation of various novel, ubiquitous metrics used throughout clubs’ analytics departments. These can influence many of their day-to-day operations ranging from financial decisions on player transfers, to evaluation of team performance. At the forefront of this scientific movement is the metric expected goals, a measure which allows analysts to quantify how likely a given shot is to result in a goal however, xG models have not until this point considered using important features, e.g., player/team ability and psychological effects, and is not widely trusted by everyone in the wider football community. This study aims to solve both these issues through the implementation of machine learning techniques by, modelling expected goals values using previously untested features and comparing the predictive ability of traditional statistics against this newly developed metric. Error values from the expected goals models built in this work were shown to be competitive with optimal values from other papers, and some of the features added in this study were revealed to have a significant impact on expected goals model outputs. Secondly, not only was expected goals found to be a superior predictor of a football team’s future success when compared to traditional statistics, but also our results outperformed those collected from an industry leader in the same area.
+DA  - 2023/04/05/
+PY  - 2023
+DO  - 10.1371/journal.pone.0282295
+DP  - DOI.org (Crossref)
+VL  - 18
+IS  - 4
+SP  - e0282295
+J2  - PLoS ONE
+LA  - en
+SN  - 1932-6203
+ST  - Expected goals in football
+UR  - https://dx.plos.org/10.1371/journal.pone.0282295
+Y2  - 2025/02/21/14:26:14
+ER  - 
+
+TY  - JOUR
+TI  - Understanding gender differences in professional European football through machine learning interpretability and match actions data
+AU  - Garnica-Caparrós, Marc
+AU  - Memmert, Daniel
+T2  - Scientific Reports
+AB  - Abstract
+            
+              After the great success of the Women’s World Cup in 2019, several platforms have started identifying the reasons for gender inequality in European football. Even though these inequalities emerge from a variety of key aspects in the modern sport, we focused on the game and evaluated the main differential features of European male and female football players in match actions data under the assumption of finding significant differences and established patterns between genders. A methodology for unbiased feature extraction and objective analysis is presented based on data integration and machine learning explainability algorithms. Female (
+              
+                
+                  $$n_0 = 1511$$
+                  
+                    
+                      
+                        n
+                        0
+                      
+                      =
+                      1511
+                    
+                  
+                
+              
+              ) and male (
+              
+                
+                  $$n_1 = 2703$$
+                  
+                    
+                      
+                        n
+                        1
+                      
+                      =
+                      2703
+                    
+                  
+                
+              
+              ) data points were collected from event data and categorized by game period and player position. We set up a supervised classification pipeline to predict the gender of each player by looking at their actions in the game. The comparison methodology did not include any qualitative enrichment or subjective analysis to prevent biased data enhancement or gender-related processing. The pipeline included three representative binary classification models; A logic-based Decision Trees, a probabilistic Logistic Regression and a multilevel perceptron Neural Network. Each model tried to draw the differences between male and female data points, and we extracted the results using machine learning explainability methods to understand the underlying mechanics of the models implemented. The study was able to determine pivotal factors that differentiate each gender performance as well as disseminate unique patterns by gender involving more than one indicator. Data enhancement and critical variables analysis are essential next steps to support this framework and serve as a baseline for further studies and training developments.
+DA  - 2021/05/24/
+PY  - 2021
+DO  - 10.1038/s41598-021-90264-w
+DP  - DOI.org (Crossref)
+VL  - 11
+IS  - 1
+SP  - 10805
+J2  - Sci Rep
+LA  - en
+SN  - 2045-2322
+UR  - https://www.nature.com/articles/s41598-021-90264-w
+Y2  - 2025/02/21/16:16:30
+ER  - 
+
+TY  - JOUR
+TI  - Explaining the difference between men’s and women’s football
+AU  - Pappalardo, Luca
+AU  - Rossi, Alessio
+AU  - Natilli, Michela
+AU  - Cintia, Paolo
+T2  - PLOS ONE
+A2  - Constantinou, Anthony C.
+AB  - Women’s football is gaining supporters and practitioners worldwide, raising questions about what the differences are with men’s football. While the two sports are often compared based on the players’ physical attributes, we analyze the spatio-temporal events during matches in the last World Cups to compare male and female teams based on their technical performance. We train an artificial intelligence model to recognize if a team is male or female based on variables that describe a match’s playing intensity, accuracy, and performance quality. Our model accurately distinguishes between men’s and women’s football, revealing crucial technical differences, which we investigate through the extraction of explanations from the classifier’s decisions. The differences between men’s and women’s football are rooted in play accuracy, the recovery time of ball possession, and the players’ performance quality. Our methodology may help journalists and fans understand what makes women’s football a distinct sport and coaches design tactics tailored to female teams.
+DA  - 2021/08/04/
+PY  - 2021
+DO  - 10.1371/journal.pone.0255407
+DP  - DOI.org (Crossref)
+VL  - 16
+IS  - 8
+SP  - e0255407
+J2  - PLoS ONE
+LA  - en
+SN  - 1932-6203
+UR  - https://dx.plos.org/10.1371/journal.pone.0255407
+Y2  - 2025/02/21/16:59:28
+ER  - 
+
+TY  - CONF
+TI  - Seq2Event: Learning the Language of Soccer Using Transformer-based Match Event Prediction
+AU  - Simpson, Ian
+AU  - Beal, Ryan J.
+AU  - Locke, Duncan
+AU  - Norman, Timothy J.
+T2  - KDD '22: The 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+AB  - Soccer is a sport characterised by open and dynamic play, with player actions and roles aligned according to team strategies simultaneously and at multiple temporal scales with high spatial freedom. This complexity presents an analytics challenge, which to date has largely been solved by decomposing the game according to specific criteria to analyse specific problems. We propose a more holistic approach, utilising Transformer or RNN components in the novel Seq2Event model, in which the next match event is predicted given prior match events and context. We show metric creation using a general purpose context-aware model as a deployable practical application, and demonstrate development of the poss-util metric using a Seq2Event model. Summarising the expectation of key attacking events (shot, cross) during each possession, our metric is shown to correlate over matches (𝑟 = 0.91, 𝑛 = 190) with the popular xG metric. Example practical application of poss-util to analyse behaviour over possessions and matches is made. Potential in sports with stronger sequentiality, such as rugby union, is discussed.
+C1  - Washington DC USA
+C3  - Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+DA  - 2022/08/14/
+PY  - 2022
+DO  - 10.1145/3534678.3539138
+DP  - DOI.org (Crossref)
+SP  - 3898
+EP  - 3908
+LA  - en
+PB  - ACM
+SN  - 978-1-4503-9385-0
+ST  - Seq2Event
+UR  - https://dl.acm.org/doi/10.1145/3534678.3539138
+Y2  - 2025/02/22/15:38:49
+ER  - 
+
+TY  - JOUR
+TI  - Influence of Red and Yellow cards on team performance in elite soccer
+AU  - Badiella, Llorenç
+AU  - Puig, Pedro
+AU  - Lago-Peñas, Carlos
+AU  - Casals, Martí
+T2  - Annals of Operations Research
+AB  - Abstract
+            The aim of the current study is to analyze the effects of red and yellow cards on the scoring rate in elite soccer. The sample was composed of 1826 matches in the top five European leagues. All events were structured in 5-min intervals and were analyzed by means of a Generalized Linear Mixed Model with Poisson distribution, considering the presence of correlated data, where the dependent variable is represented by scoring rate. Team strength and home advantage were considered implicitly by means of a transformation of the betting odds for each game. The model also took into account the goal difference and time evolution. Overall, we found that after a sending off, each team’s scoring rate changes significantly, damaging the penalised team and favouring its opponent. When the player who is sent off belongs to the Away team, the impact of a red card is more or less maintained over time intervals. The red card effect, on the other hand, tends to fade over time when the affected team is stronger. The relative difference in scoring rates is also affected by the goal difference and the difference in booked players, being slightly lower for the team going ahead if it has more booked players. Our approach allows estimating the expected cumulative soring rate through time for various red card scenarios. Particularly if a red card is given with 30 min of remaining time, the expected impact is 0.39 goals if the guilty player is on the visiting team and 0.50 if he plays for the home team. Coaches and analysts could use this information to establish objectives for players and teams in training and matches and to be prepared for these very different scenarios of numerical superiority or inferiority.
+DA  - 2023/06//
+PY  - 2023
+DO  - 10.1007/s10479-022-04733-0
+DP  - DOI.org (Crossref)
+VL  - 325
+IS  - 1
+SP  - 149
+EP  - 165
+J2  - Ann Oper Res
+LA  - en
+SN  - 0254-5330, 1572-9338
+UR  - https://link.springer.com/10.1007/s10479-022-04733-0
+Y2  - 2025/02/22/15:57:13
+ER  - 
+
+TY  - JOUR
+TI  - A Comprehensive Data Pipeline for Comparing the Effects of Momentum on Sports Leagues
+AU  - Noel, Jordan Truman Paul
+AU  - Prado Da Fonseca, Vinicius
+AU  - Soares, Amilcar
+T2  - Data
+AB  - Momentum has been a consistently studied aspect of sports science for decades. Among the established literature, there has, at times, been a discrepancy between conclusions. However, if momentum is indeed an actual phenomenon, it would affect all aspects of sports, from player evaluation to pre-game prediction and betting. Therefore, using momentum-based features that quantify a team’s linear trend of play, we develop a data pipeline that uses a small sample of recent games to assess teams’ quality of play and measure the predictive power of momentum-based features versus the predictive power of more traditional frequency-based features across several leagues using several machine learning techniques. More precisely, we use our pipeline to determine the differences in the predictive power of momentum-based features and standard statistical features for the National Hockey League (NHL), National Basketball Association (NBA), and five major first-division European football leagues. Our findings show little evidence that momentum has superior predictive power in the NBA. Still, we found some instances of the effects of momentum on the NHL that produced better pre-game predictors, whereas we view a similar trend in European football/soccer. Our results indicate that momentum-based features combined with frequency-based features could improve pre-game prediction models and that, in the future, momentum should be studied more from a feature/performance indicator point-of-view and less from the view of the dependence of sequential outcomes, thus attempting to distance momentum from the binary view of winning and losing.
+DA  - 2024/02/01/
+PY  - 2024
+DO  - 10.3390/data9020029
+DP  - DOI.org (Crossref)
+VL  - 9
+IS  - 2
+SP  - 29
+J2  - Data
+LA  - en
+SN  - 2306-5729
+UR  - https://www.mdpi.com/2306-5729/9/2/29
+Y2  - 2025/02/22/16:41:51
+ER  - 
+
+TY  - JOUR
+TI  - Passing path predicts shooting outcome in football
+AU  - Cao, Shun
+T2  - Scientific Reports
+AB  - Abstract
+            What determines the outcome of a shot (scored or unscored) in football (soccer)? Numerous studies have investigated various aspects of this question, including the skills and physical/mental state of the shooter or goalkeeper, the positional information of shots, as well as the attacking styles and defensive formations of the opposing team. However, a critical question has received limited attention: How does the passing path affect the outcome of a shot? In other words, does the path of the ball before shooting significantly influence the result when the same player takes two shots from the same location? This study aims to fill the gap in the literature by conducting qualitative studies using a dataset comprising 34,938 shots, along with corresponding passing paths from top-tier football leagues and international competitions such as the World Cup. Eighteen path features were extracted and applied to three different machine-learning models. The results indicate that the passing path, whether with or without the positional information of shots, can indeed predict shooting outcomes and reveal influential path features. Moreover, it suggests that taking quick actions to move the ball across areas with a high probability of scoring a goal can significantly increases the chance of a successful shot. Interestingly, certain path features that are commonly considered important for team performance, such as the distribution of passes among players and the overall path length, were found to be less significant for shooting outcomes. These findings enhance our understanding of the effective ball-passing and provide valuable insights into the critical factors for achieving successful shots in football games.
+DA  - 2024/04/26/
+PY  - 2024
+DO  - 10.1038/s41598-024-60183-7
+DP  - DOI.org (Crossref)
+VL  - 14
+IS  - 1
+SP  - 9572
+J2  - Sci Rep
+LA  - en
+SN  - 2045-2322
+UR  - https://www.nature.com/articles/s41598-024-60183-7
+Y2  - 2025/02/22/16:46:49
+ER  - 
+
+TY  - JOUR
+TI  - Towards a foundation large events model for soccer
+AU  - Mendes-Neves, Tiago
+AU  - Meireles, Luís
+AU  - Mendes-Moreira, João
+T2  - Machine Learning
+AB  - This paper introduces the Large Events Model (LEM) for soccer, a novel deep learning framework for generating and analyzing soccer matches. The framework can simulate games from a given game state, with its primary output being the ensuing probabilities and events from multiple simulations. These can provide insights into match dynamics and underlying mechanisms. We discuss the framework’s design, features, and methodologies, including model optimization, data processing, and evaluation techniques. The models within this framework are developed to predict specific aspects of soccer events, such as event type, success likelihood, and further details. In an applied context, we showcase the estimation of xP+, a metric estimating a player’s contribution to the team’s points earned. This work ultimately enhances the field of sports event prediction and practical applications and emphasizes the potential for this kind of method.
+DA  - 2024/12//
+PY  - 2024
+DO  - 10.1007/s10994-024-06606-y
+DP  - DOI.org (Crossref)
+VL  - 113
+IS  - 11-12
+SP  - 8687
+EP  - 8709
+J2  - Mach Learn
+LA  - en
+SN  - 0885-6125, 1573-0565
+UR  - https://link.springer.com/10.1007/s10994-024-06606-y
+Y2  - 2025/02/23/13:18:06
+ER  - 
+
+TY  - JOUR
+TI  - Pass2vec: Analyzing soccer players’ passing style using deep learning
+AU  - Cho, Hyeonah
+AU  - Ryu, Hyunyoung
+AU  - Song, Minseok
+T2  - International Journal of Sports Science & Coaching
+AB  - The aim of this research was to analyze the player’s pass style with enhanced accuracy using the deep learning technique. We proposed Pass2vec, a passing style descriptor that can characterize each player’s passing style by combining detailed information on passes. Pass data was extracted from the ball event data from five European football leagues in the 2017–2018 season, which was divided into training and test set. The information on location, length, and direction of passes was combined using Convolutional Autoencoder. As a result, pass vectors were generated for each player. We verified the method with the player retrieval task, which successfully retrieved 76.5% of all players in the top-20 with the descriptor and the result outperformed previous methods. Also, player similarity analysis confirmed the resemblance of players passes on three representative cases, showing the actual application and practical use of the method. The results prove that this novel method for characterizing player’s styles with improved accuracy will enable us to understand passing better for player training and recruitment.
+DA  - 2022/04//
+PY  - 2022
+DO  - 10.1177/17479541211033078
+DP  - DOI.org (Crossref)
+VL  - 17
+IS  - 2
+SP  - 355
+EP  - 365
+J2  - International Journal of Sports Science & Coaching
+LA  - en
+SN  - 1747-9541, 2048-397X
+ST  - Pass2vec
+UR  - https://journals.sagepub.com/doi/10.1177/17479541211033078
+Y2  - 2025/02/24/11:56:42
+ER  - 
+
+TY  - JOUR
+TI  - Machine Learning Enabled Team Performance Analysis in the Dynamical Environment of Soccer
+AU  - Kusmakar, Shitanshu
+AU  - Shelyag, Sergiy
+AU  - Zhu, Ye
+AU  - Dwyer, Dan
+AU  - Gastin, Paul
+AU  - Angelova, Maia
+T2  - IEEE Access
+AB  - Team sports can be viewed as dynamical systems unfolding in time and thus require tools and approaches congruent to the analysis of dynamical systems. The analysis of the pattern-forming dynamics of player interactions can uncover the clues to underlying tactical behaviour. This study aims to propose quantitative measures of a team’s performance derived only using player interactions. Concretely, we segment the data into events ending with a goal attempt, that is, ‘‘Shot’’. Using the acquired sequences of events, we develop a coarse-grain activity model representing a player-to-player interaction network. We derive measures based on information theory and total interaction activity, to demonstrate an association with an attempt to score. In addition, we developed a novel machine learning approach to predict the likelihood of a team making an attempt to score during a segment of the match. Our developed prediction models showed an overall accuracy of 75.2% in predicting the correct segmental outcome from 13 matches in our dataset. The overall predicted winner of a match correlated with the true match outcome in 66.6% of the matches that ended in a result. Furthermore, the algorithm was evaluated on the largest available open collection of soccer logs. The algorithm showed an accuracy of 0.84 in the classiﬁcation of the 42, 860 segments from 1, 941 matches and correctly predicted the match outcome in 81.9% of matches that ended in a result. The proposed measures of performance offer an insight into the underlying performance characteristics.
+DA  - 2020///
+PY  - 2020
+DO  - 10.1109/ACCESS.2020.2992025
+DP  - DOI.org (Crossref)
+VL  - 8
+SP  - 90266
+EP  - 90279
+J2  - IEEE Access
+LA  - en
+SN  - 2169-3536
+UR  - https://ieeexplore.ieee.org/document/9085411/
+Y2  - 2025/02/24/12:10:46
+ER  - 
+
+TY  - JOUR
+TI  - Bettors’ reaction to match dynamics: Evidence from in-game betting
+AU  - Michels, Rouven
+AU  - Ötting, Marius
+AU  - Langrock, Roland
+T2  - European Journal of Operational Research
+DA  - 2023/11//
+PY  - 2023
+DO  - 10.1016/j.ejor.2023.04.006
+DP  - DOI.org (Crossref)
+VL  - 310
+IS  - 3
+SP  - 1118
+EP  - 1127
+J2  - European Journal of Operational Research
+LA  - en
+SN  - 03772217
+ST  - Bettors’ reaction to match dynamics
+UR  - https://linkinghub.elsevier.com/retrieve/pii/S0377221723002758
+Y2  - 2025/02/24/12:27:30
+ER  - 
+
+TY  - JOUR
+TI  - CMPN: Modeling and analysis of soccer teams using Complex Multiplex Passing Network
+AU  - Beheshtian-Ardakani, Arash
+AU  - Salehi, Mostafa
+AU  - Sharma, Rajesh
+T2  - Chaos, Solitons & Fractals
+AB  - Nowadays, coaches exploit data analysis in soccer (football) matches to plan their strategies against opponents. Network science, a subdomain of data analytics, is widely used to analyze soccer matches by treating players as nodes and passes between them as edges. However, single-layer methods for analyzing games overlook critical information by aggregating different types of passes into one layer. This paper introduces a new model called the Complex Multiplex Passing Network (CMPN) for analyzing team sports performance, with a focus on soccer matches. We utilized a real-world dataset to construct the multilayer structure of the CMPN. Each layer represents a specific type of pass between players. Using the CMPN, we conducted various analysis tasks at different topological scales. Firstly, we identified the core players of teams by calculating the PageRank versatility of each player. Next, we discovered the types of passes between trios of players based on multilayer motifs. Additionally, we measured similarities between passing tactics using the Pearson interlayer assortativity measure. Finally, we employed a long short-term memory network to predict the outcomes of attacking plays using the CMPN model. The predictions achieved over 90% accuracy and approximately 70% F-measure. These findings offer practical value to coaches and performance analysts, as they enable appropriate planning by predicting playing styles in different competitions and neutralizing the strategies of opposing teams.
+DA  - 2023/09//
+PY  - 2023
+DO  - 10.1016/j.chaos.2023.113778
+DP  - DOI.org (Crossref)
+VL  - 174
+SP  - 113778
+J2  - Chaos, Solitons & Fractals
+LA  - en
+SN  - 09600779
+ST  - CMPN
+UR  - https://linkinghub.elsevier.com/retrieve/pii/S0960077923006793
+Y2  - 2025/02/24/12:37:19
+ER  - 
+
+TY  - JOUR
+TI  - Team-Builder: Toward More Effective Lineup Selection in Soccer
+AU  - Cao, Anqi
+AU  - Lan, Ji
+AU  - Xie, Xiao
+AU  - Chen, Hongyu
+AU  - Zhang, Xiaolong
+AU  - Zhang, Hui
+AU  - Wu, Yingcai
+T2  - IEEE Transactions on Visualization and Computer Graphics
+AB  - Lineup selection is an essential and important task in soccer matches. To win a match, coaches must consider various factors and select appropriate players for a planned formation. Computation-based tools have been proposed to help coaches on this complex task, but they are usually based on over-simplified models on player performances, do not support interactive analysis, and overlook the inputs by coaches. In this paper, we propose a method for visual analytics of soccer lineup selection by tackling two challenges: characterizing essential factors involved in generating optimal lineup, and supporting coach-driven visual analytics of lineup selection. We develop a lineup selection model that integrates such important factors, such as spatial regions of player actions and defensive interactions with opponent players. A visualization system, Team-Builder, is developed to help coaches control the process of lineup generation, explanation, and comparison through multiple coordinated views. The usefulness and effectiveness of our system are demonstrated by two case studies on a real-world soccer event dataset.
+DA  - 2023/12//
+PY  - 2023
+DO  - 10.1109/TVCG.2022.3207147
+DP  - DOI.org (Crossref)
+VL  - 29
+IS  - 12
+SP  - 5178
+EP  - 5193
+J2  - IEEE Trans. Visual. Comput. Graphics
+LA  - en
+SN  - 1077-2626, 1941-0506, 2160-9306
+ST  - Team-Builder
+UR  - https://ieeexplore.ieee.org/document/9894103/
+Y2  - 2025/02/24/12:55:02
+ER  - 
+
+TY  - JOUR
+TI  - Study State Dynamics of Team Passing Networks in Soccer Games
+AU  - Cao, Shun
+T2  - Journal of Sports Sciences
+AB  - Complex networks have been widely used in studying collective behaviours in soccer sports, such as examining tactical strategies, recognizing team characteristics, and discovering topological determinants for high team performance. The passing network of a team evolves and displays different temporal patterns, that are strongly linked to team status, tactical strategies, attacking/defending transitions, etc. Nevertheless, existing research has not illuminated the state dynamics of team passing networks, whereas similar methods have been extensively used in examining the dynamical brain networks constructed from human brain neuroimage data. This study aims to investigate the state dynamics of team passing networks in soccer sports. The introduced method incorporates multiple techniques, including sliding time window, network modeling, graph distance measure, clustering, and cluster validation. The final match of the FIFA World Cup 2018 was taken as an example, and the state dynamics of teams Croatia and France were analyzed respectively. Additionally, the effects of the time windows and graph distance measures on the results were briefly discussed. This study presents a novel outlook on examining the dynamics of team passing networks, as it facilitates the recognition of important team states or state transitions in soccer and other team ball-passing sports for further analysis.
+DA  - 2023/06/27/
+PY  - 2023
+DO  - 10.1080/02640414.2023.2229154
+DP  - DOI.org (Crossref)
+SP  - 1
+EP  - 15
+J2  - Journal of Sports Sciences
+LA  - en
+SN  - 0264-0414, 1466-447X
+UR  - https://www.tandfonline.com/doi/full/10.1080/02640414.2023.2229154
+Y2  - 2025/02/24/15:32:18
+ER  - 
+
+TY  - JOUR
+TI  - How Positional Constraints Affect Footedness in Football: A Notational Analysis of Five Leagues in Europe
+AU  - Marcori, Alexandre Jehan
+AU  - Giovanini, Bruno
+AU  - Monteiro, Pedro Henrique Martins
+AU  - Nascimento, Vitor Bertoli
+AU  - Brito De Souza, Diego
+AU  - Okazaki, Victor Hugo Alves
+T2  - Journal of Motor Behavior
+AB  - In elite-level soccer, the ability to take shots with both limbs from different positions in the pitch may be key to success. This research aimed to: 1) analyze footedness of elite-football players in European leagues during shooting by computing frequency of right- and left-foot use and accuracy; and 2) investigate whether an athlete’s distance from the target (goal, penalty, and outside penalty area) and pitch zone (center, left, or right from the goal) can constrain foot selection during shooting. We analyzed 1826 games from the 2017/18 season, divided between: Spanish LaLiga (380 matches); Italian Serie A (380 matches); English Premier League (380 matches); German Bundesliga (306 matches); and French Ligue 1 (380 matches). Results revealed asymmetrical proportions of foot selection, favoring the preferred foot for right- and left-footed athletes. Frequency of preferred foot selection increased as a function of distance from the target (i.e., the farther the athlete, higher the percentage of preferred foot selection). Shots taken from the left side were more often performed with the right foot and vice-versa, for both left- and right-footed athletes. Interestingly, asymmetries were observed only in foot selection, but not in performance, as success rate did not vary between limbs in any position.
+DA  - 2022/05/04/
+PY  - 2022
+DO  - 10.1080/00222895.2021.1980367
+DP  - DOI.org (Crossref)
+VL  - 54
+IS  - 3
+SP  - 382
+EP  - 390
+J2  - Journal of Motor Behavior
+LA  - en
+SN  - 0022-2895, 1940-1027
+ST  - How Positional Constraints Affect Footedness in Football
+UR  - https://www.tandfonline.com/doi/full/10.1080/00222895.2021.1980367
+Y2  - 2025/02/25/10:28:15
+ER  - 
+
+TY  - JOUR
+TI  - Team-Scouter: Simulative Visual Analytics of Soccer Player Scouting
+AU  - Cao, Anqi
+AU  - Xie, Xiao
+AU  - Zhang, Runjin
+AU  - Tian, Yuxin
+AU  - Fan, Mu
+AU  - Zhang, Hui
+AU  - Wu, Yingcai
+T2  - IEEE Transactions on Visualization and Computer Graphics
+AB  - In soccer, player scouting aims to find players suitable for a team to increase the winning chance in future matches. To scout suitable players, coaches and analysts need to consider whether the players will perform well in a new team, which is hard to learn directly from their historical performances. Match simulation methods have been introduced to scout players by estimating their expected contributions to a new team. However, they usually focus on the simulation of match results and hardly support interactive analysis to navigate potential target players and compare them in fine-grained simulated behaviors. In this work, we propose a visual analytics method to assist soccer player scouting based on match simulation. We construct a two-level match simulation framework for estimating both match results and player behaviors when a player comes to a new team. Based on the framework, we develop a visual analytics system, Team-Scouter, to facilitate the simulative-based soccer player scouting process through player navigation, comparison, and investigation. With our system, coaches and analysts can find potential players suitable for the team and compare them on historical and expected performances. For an in-depth investigation of the players’ expected performances, the system provides a visual comparison between the simulated behaviors of the player and the actual ones. The usefulness and effectiveness of the system are demonstrated by two case studies on a real-world dataset and an expert interview.
+DA  - 2025/01//
+PY  - 2025
+DO  - 10.1109/TVCG.2024.3456216
+DP  - DOI.org (Crossref)
+VL  - 31
+IS  - 1
+SP  - 1
+EP  - 11
+J2  - IEEE Trans. Visual. Comput. Graphics
+LA  - en
+SN  - 1077-2626, 1941-0506, 2160-9306
+ST  - Team-Scouter
+UR  - https://ieeexplore.ieee.org/document/10670523/
+Y2  - 2025/02/25/11:25:44
+ER  - 
+
+TY  - CONF
+TI  - Learning football player features using graph embeddings for player recommendation system
+AU  - Yılmaz, Öznur İlayda
+AU  - Öğüdücü, Şule Gündüz
+T2  - SAC '22: The 37th ACM/SIGAPP Symposium on Applied Computing
+AB  - Football analytics is a field that has been growing incredibly over the years thanks to the improvement of technologies capturing data in sports events. Outcomes of football matches are highly affected by the in-game decisions of football manager such as defending and attacking strategies or substituting particular football players. That is why football player recommendation is an important decision making task to gain the best results from a football match. To assist the football managers in this decision making process, a system that recommends the most suitable football player to replace a certain player is proposed. Our proposed model utilizes passing information during a game to learn feature embeddings of football players. Using the learned feature embeddings, a k-nearest neighbors (k-NN) model, an XGBoost model and an artificial neural network (ANN) model are trained to recommend the most similar and suitable replacement for a football player. The novelty of this recommendation system is that learned embeddings generate high-quality representations of football players which yield high performance for player recommendation when a replacement is needed.
+C1  - Virtual Event
+C3  - Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing
+DA  - 2022/04/25/
+PY  - 2022
+DO  - 10.1145/3477314.3507257
+DP  - DOI.org (Crossref)
+SP  - 577
+EP  - 584
+LA  - en
+PB  - ACM
+SN  - 978-1-4503-8713-2
+UR  - https://dl.acm.org/doi/10.1145/3477314.3507257
+Y2  - 2025/02/25/13:38:53
+ER  - 
+
+TY  - JOUR
+TI  - Modeling ball possession dynamics in the game of football
+AU  - Chacoma, A.
+AU  - Almeira, N.
+AU  - Perotti, J. I.
+AU  - Billoni, O. V.
+T2  - Physical Review E
+DA  - 2020/10/15/
+PY  - 2020
+DO  - 10.1103/PhysRevE.102.042120
+DP  - DOI.org (Crossref)
+VL  - 102
+IS  - 4
+SP  - 042120
+J2  - Phys. Rev. E
+LA  - en
+SN  - 2470-0045, 2470-0053
+UR  - https://link.aps.org/doi/10.1103/PhysRevE.102.042120
+Y2  - 2025/02/25/14:03:12
+ER  - 
+
+TY  - JOUR
+TI  - Investigating the inter-country variations in game interruptions across the Big-5 European football leagues
+AU  - Zhao, Yangqing
+AU  - Zhang, Hui
+T2  - International Journal of Performance Analysis in Sport
+AB  - This paper reports an empirical investigation of game interruptions in competitions based on data from the European Big-5 leagues. The results showed that 1) visiting teams and teams facing strong opponents tended to have longer game interruptions; 2) the dura­ tions of throw-ins and stoppages due to out-of-bounds balls were significantly longer in the English Premier League than in the other four leagues (p < 0.001), and the durations of free kicks were longer in the English Premier League than in three other leagues (except Ligue 1, p < 0.001); 3) the durations of free kicks (p < 0.001), throwins (p = 0.038) and goal kicks (p < 0.001) increased towards the end of matches, but the durations of interruptions related to free kicks (p < 0.001) in the offensive zone decreased significantly as the end of the game approached; and 4) the durations of many interrup­ tions served strategic purposes, as, for example, the time spent by a one-goal leading team on throw-ins (p < 0.001), goal kicks (p < 0.001), corner kicks (p < 0.01) and free kicks (p < 0.01) increased with game time, while for one-goal trailing teams, the time spent on these interruptions decreased over time (all p < 0.001).
+DA  - 2021/01/02/
+PY  - 2021
+DO  - 10.1080/24748668.2020.1865688
+DP  - DOI.org (Crossref)
+VL  - 21
+IS  - 1
+SP  - 180
+EP  - 196
+J2  - International Journal of Performance Analysis in Sport
+LA  - en
+SN  - 2474-8668, 1474-8185
+UR  - https://www.tandfonline.com/doi/full/10.1080/24748668.2020.1865688
+Y2  - 2025/02/26/09:01:33
+ER  - 
+
+TY  - JOUR
+TI  - Risk-taking, loss aversion, and performance feedback in dynamic and heterogeneous tournaments
+AU  - Yang, Qing
+AU  - Zhao, Yangqing
+T2  - Frontiers in Psychology
+AB  - Within the context of professional football, we examined the impact of the interim game state on risk-taking and performance during a dynamic tournament. This study used 9,256 segments from the top five European football leagues as samples. These segments were derived from 1,826 games played during the 2017–2018 season. Poisson regression was employed to analyze the distinct effects of game state and heterogeneity on performance under pressure. The results indicated that stronger teams tended to increase their attack intensity when facing weaker opponents. However, as their lead expanded, they tended to reduce their attack intensity, particularly in matches with heterogeneous characteristics. Moreover, teams trailing in scores tended to intensify their attacks but achieved little. However, leading teams consistently underperformed in terms of blocked shots and corner kicks. Additionally, tied teams systematically exhibited lower performance in shots on target and free kicks compared to leading teams, despite having a higher motivation to excel. These findings extend our understanding of how risk-taking and performance depend on disclosing information regarding relative performance.
+DA  - 2023/11/09/
+PY  - 2023
+DO  - 10.3389/fpsyg.2023.1223369
+DP  - DOI.org (Crossref)
+VL  - 14
+SP  - 1223369
+J2  - Front. Psychol.
+LA  - en
+SN  - 1664-1078
+UR  - https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1223369/full
+Y2  - 2025/02/26/09:39:49
+ER  - 
+
+TY  - JOUR
+TI  - Spatial partitioning of the football pitch based on successful passing paths
+AU  - Cao, Shun
+T2  - International Journal of Sports Science & Coaching
+AB  - While it is evident that disparities exist across various areas on a football pitch, and numerous studies have investigated spatio-temporal datasets in football for various analyses, there remains a lack of an effective method for quantitatively partitioning the pitch into speciﬁc areas with different properties. To address this gap, this article presents a novel approach to partitioning a football pitch into distinct areas based on successful passing paths that lead to goals. Utilizing hierarchical clustering and spatial/temporal features derived from successful passing paths, the study provides multi-level partitions of the football pitch, revealing detailed insights into the relationships between speciﬁc areas and scored shots in football games. Empirical analysis of over 4000 successful passing paths from various football leagues and international football events demonstrates the effectiveness of the proposed methodology in identifying and understanding the diverse areas of football pitches. The ﬁndings suggest practical applications in football analysis, aiding coaches and specialists in tactics development and informing player positioning and movement strategies.
+DA  - 2024/08//
+PY  - 2024
+DO  - 10.1177/17479541241254765
+DP  - DOI.org (Crossref)
+VL  - 19
+IS  - 4
+SP  - 1688
+EP  - 1696
+J2  - International Journal of Sports Science & Coaching
+LA  - en
+SN  - 1747-9541, 2048-397X
+UR  - https://journals.sagepub.com/doi/10.1177/17479541241254765
+Y2  - 2025/02/26/10:56:39
+ER  - 
+
+TY  - JOUR
+TI  - Automated Discovery of Successful Strategies in Association Football
+AU  - Muñoz, Omar
+AU  - Monroy, Raúl
+AU  - Cañete-Sifuentes, Leonardo
+AU  - Ramirez-Marquez, Jose E.
+T2  - Applied Sciences
+AB  - Using automated data analysis to understand what makes a play successful in football can enable teams to make data-driven decisions that may enhance their performance throughout the season. Analyzing different types of plays (e.g., corner, penalty, free kicks) requires different considerations. This work focuses on the analysis of corner kick plays. However, the central ideas apply to analyzing all types of plays. While prior analyses (univariate, bivariate, multivariate) have explored the link between contextual factors (e.g., match period, type of defensive marking) and the level of success of a corner kick (e.g., shot, shot on goal, goal), there has been no attempt to combine spatiotemporal event data (sequences of ball movements through the field) and contextual information to determine when and how (strategy) a particular type of corner kick play (tactic) is more likely to succeed or not. To address this gap, we propose an approach that (1) transforms spatiotemporal data into an alternative representation suitable for mining sequential patterns, (2) identifies and characterizes the sequential patterns used by offensive teams to move the ball toward the scoring zone (tactics), and (3) extracts contrast patterns to identify under what conditions different tactics result in increased chances of success or failure; we call these conditions strategies. Our results suggest that favorable and unfavorable conditions for tactic application are not the same across different tactics, supporting the argument that there is a benefit in performing an analysis that treats different tactics separately, where spatiotemporal information plays a crucial role. Unlike prior works on the corner kick, our approach can capture how the interaction between multiple contextual factors impacts the outcome of a corner kick. At the same time, the results can be explained to others in natural languages.
+DA  - 2024/02/08/
+PY  - 2024
+DO  - 10.3390/app14041403
+DP  - DOI.org (Crossref)
+VL  - 14
+IS  - 4
+SP  - 1403
+J2  - Applied Sciences
+LA  - en
+SN  - 2076-3417
+UR  - https://www.mdpi.com/2076-3417/14/4/1403
+Y2  - 2025/02/27/13:16:05
+ER  - 
+
+TY  - CONF
+TI  - TimeElide: Visual Analysis of Non-Contiguous Time Series Slices
+AU  - Oppermann, Michael
+AU  - Liu, Luce
+AU  - Munzner, Tamara
+T2  - 2021 IEEE Visualization Conference (VIS)
+AB  - We introduce the design and implementation of TimeElide, a visual analysis tool for the novel data abstraction of non-contiguous time series slices, namely time intervals that contain a sequence of timevalue pairs but are not adjacent to each other. This abstraction is relevant for analysis tasks where time periods of interest are known in advance or inferred from the data, rather than discovered through openended visual exploration. We present a visual encoding design space as an underpinning of TimeElide, and the new sparkbox technique for visualizing ﬁne and coarse grained temporal structures within one view. Datasets from different domains and with varying characteristics guided the development and their analysis provides preliminary evidence of TimeElide’s utility. We provide open-source code and demo at https://github.com/UBC-InfoVis/time-elide and supplemental materials at https://osf.io/yqvmf/.
+C1  - New Orleans, LA, USA
+C3  - 2021 IEEE Visualization Conference (VIS)
+DA  - 2021/10//
+PY  - 2021
+DO  - 10.1109/VIS49827.2021.9623320
+DP  - DOI.org (Crossref)
+SP  - 41
+EP  - 45
+LA  - en
+PB  - IEEE
+SN  - 978-1-66543-335-8
+ST  - TimeElide
+UR  - https://ieeexplore.ieee.org/document/9623320/
+Y2  - 2025/03/02/14:33:12
+ER  - 
+
+TY  - CONF
+TI  - Evaluating Player Performances in Football: A Debiased Machine Learning Approach
+AU  - Bajons, Robert
+T2  - ICoMS 2023: 2023 6th International Conference on Mathematics and Statistics
+AB  - In this work, a novel framework for the evaluation of individual football (soccer) players using event stream data is introduced. Applying a debiased machine learning approach (DML), we estimate the contribution of players to a possession sequence, i.e. a sequence of consecutive on-ball events stopped either by the opponent team gaining the possession or by an action of the referee. The estimates are then used to derive a metric to rate players, which is able to account for team strengths and game context. To show the potential of our novel rating approach we compare it to existing ratings by measuring the quality of match outcome forecasts generated when the ratings are used as predictor variables.
+C1  - Leipzig Germany
+C3  - Proceedings of the 2023 6th International Conference on Mathematics and Statistics
+DA  - 2023/07/14/
+PY  - 2023
+DO  - 10.1145/3613347.3613368
+DP  - DOI.org (Crossref)
+SP  - 135
+EP  - 140
+LA  - en
+PB  - ACM
+SN  - 9798400700187
+ST  - Evaluating Player Performances in Football
+UR  - https://dl.acm.org/doi/10.1145/3613347.3613368
+Y2  - 2025/03/03/13:32:15
+ER  - 
+
+TY  - JOUR
+TI  - Sabotage in dynamic tournaments with heterogeneous contestants: Evidence from European football
+AU  - Zhao, Yangqing
+AU  - Zhang, Hui
+T2  - International Journal of Sports Science & Coaching
+AB  - This paper analyses how sabotage, measured as the number of fouls and yellow and red cards, is affected by the relative performance of and asymmetries between teams, determined based on score margin and the odds gap between one team and its opponent. By applying detailed controls for within-match dynamics and differences in team quality, we ﬁrst observe that badly losing favourites are more willing than losing underdogs to increase their unsporting behaviour in heterogeneous contests. There are more yellow cards and fouls as the game progresses. We further ﬁnd that most sabotage (yellow cards) can be observed when the (absolute) goal difference is equal to 1. Teams decrease their level of sabotage (fouls) by increasing the number of goals of lead or trail. In addition, weaker teams have an incentive to engage in more unfair and destructive strategies, such as committing more fouls, including those penalized with yellow cards. However, the incidence of red cards is not inﬂuenced by the score margin or strength gap.
+DA  - 2023/04//
+PY  - 2023
+DO  - 10.1177/17479541221078647
+DP  - DOI.org (Crossref)
+VL  - 18
+IS  - 2
+SP  - 552
+EP  - 562
+J2  - International Journal of Sports Science & Coaching
+LA  - en
+SN  - 1747-9541, 2048-397X
+ST  - Sabotage in dynamic tournaments with heterogeneous contestants
+UR  - https://journals.sagepub.com/doi/10.1177/17479541221078647
+Y2  - 2025/03/03/13:40:30
+ER  - 
+
+TY  - BOOK
+TI  - Intelligent Data Engineering and Automated Learning – IDEAL 2024: 25th International Conference, Valencia, Spain, November 20–22, 2024, Proceedings, Part II
+AU  - Vidal, Andreu Sim ́
+AU  - Sanchez-Anguix, Victor
+AU  - Alberola, Juan M.
+T2  - Lecture Notes in Computer Science
+CY  - Cham
+DA  - 2025///
+PY  - 2025
+DP  - DOI.org (Crossref)
+VL  - 15347
+LA  - en
+PB  - Springer Nature Switzerland
+SN  - 978-3-031-77737-0 978-3-031-77738-7
+ST  - Intelligent Data Engineering and Automated Learning – IDEAL 2024
+UR  - https://link.springer.com/10.1007/978-3-031-77738-7
+Y2  - 2025/03/03/13:51:52
+ER  - 
+
+TY  - JOUR
+TI  - Interplay of Visual Analytics and Topic Modeling in Gameplay Analysis
+AU  - Moussavi, Laleh
+AU  - Andrienko, Gennady
+AU  - Andrienko, Natalia
+AU  - Slingsby, Aidan
+T2  - Computer Graphics and Visual Computing (CGVC)
+AB  - Spatio-temporal event sequences consist of activities or occurrences involving various interconnected elements in space and time. Exploring these sequences with topic modeling is a relatively new and evolving research area. We use topic modeling to analyze football games, as an example of complex and under-explored spatio-temporal event data. A key challenge in topic modeling is selecting the most suitable number of topics for the downstream application. Selecting too few topics oversimplifies the data, merging distinct patterns, whereas selecting too many can fragment coherent themes into overlapping categories. We propose a visual analytics technique that uses dimensionality reduction on topics derived from multiple topic modeling runs, each with a different number of topics. Our technique organizes all the topics in a hierarchical layout based on their spatial similarity, making it easier to make an informed decision about selecting the most expressive set of topics that represent distinctive spatial patterns. We apply our visual analytics technique to a football dataset, illustrating how it can be used to select an appropriate set of topics for this data. We then use these topics to represent game episodes, which help us summarize game dynamics and uncover insights into the games.
+DA  - 2024///
+PY  - 2024
+DO  - 10.2312/CGVC.20241213
+DP  - DOI.org (Datacite)
+LA  - en
+UR  - https://diglib.eg.org/handle/10.2312/cgvc20241213
+Y2  - 2025/03/03/14:06:38
+KW  - CCS Concepts: Human-centered computing → Visual Analytics
+KW  - Human centered computing → Visual Analytics
+ER  - 
+
+TY  - CONF
+TI  - Dynamic Data Visualization for Soccer Performance Metrics
+AU  - Krishnamurthy, Padmanabhan
+AU  - Nanda, Nikhil
+T2  - 2021 6th International Conference for Convergence in Technology (I2CT)
+AB  - Analysis of large dataset of soccer can be extremely difficult if it is not represented graphically. This paper proposes SoccerMetrics, an interactive, open source data visualization system for predicting the individual and team performance. The effectiveness of SoccerMetrics is demonstrated by the available dataset and its visualization.
+C1  - Maharashtra, India
+C3  - 2021 6th International Conference for Convergence in Technology (I2CT)
+DA  - 2021/04/02/
+PY  - 2021
+DO  - 10.1109/I2CT51068.2021.9418098
+DP  - DOI.org (Crossref)
+SP  - 1
+EP  - 11
+LA  - en
+PB  - IEEE
+SN  - 978-1-72818-876-8
+UR  - https://ieeexplore.ieee.org/document/9418098/
+Y2  - 2025/03/03/15:44:43
+ER  - 
+
+TY  - CONF
+TI  - Performance Analysis of Everton Football Club Based on Tracking Data
+AU  - Wang, Yikang
+AU  - Wang, Hao
+AU  - Qiu, Mingyue
+T2  - 2020 IEEE International Conference on Power, Intelligent Computing and Systems (ICPICS)
+AB  - Competitive team sports are one of the most informative scenarios in the research of team cooperation analysis. However, there is a lack of simple, robust, and accurate key eventbased methods when evaluating the performance of a soccer team. In this paper, we first built a ball-passing network to facilitate teamwork analysis of a soccer team, with the help of which we then proposed a novel model for quality assessment based on highlight moments to evaluate the performance of the team. Further, we develop a third model to identify the rhythm conversion of offensive/defensive tactics so as to quantify them. Using spatiotemporal tracking data of key events in 38 Premier League games, a comprehensive and systematic analysis is formed on the performance of both the team staff and players of the Everton Football Club. Also, the key factors to the match result are quantitatively explored and modeled.
+C1  - Shenyang, China
+C3  - 2020 IEEE International Conference on Power, Intelligent Computing and Systems (ICPICS)
+DA  - 2020/07//
+PY  - 2020
+DO  - 10.1109/ICPICS50287.2020.9202246
+DP  - DOI.org (Crossref)
+SP  - 49
+EP  - 53
+LA  - en
+PB  - IEEE
+SN  - 978-1-72819-874-3
+UR  - https://ieeexplore.ieee.org/document/9202246/
+Y2  - 2025/03/04/13:02:42
+ER  - 
+
+TY  - BOOK
+TI  - Complex Networks and Their Applications XI: Proceedings of The Eleventh International Conference on Complex Networks and their Applications: COMPLEX NETWORKS 2022 — Volume 2
+AU  - Barbosa, Alberto
+AU  - Ribeiro, Pedro
+AU  - Dutra, Inês
+T2  - Studies in Computational Intelligence
+CY  - Cham
+DA  - 2023///
+PY  - 2023
+DP  - DOI.org (Crossref)
+VL  - 1078
+LA  - en
+PB  - Springer International Publishing
+SN  - 978-3-031-21130-0 978-3-031-21131-7
+ST  - Complex Networks and Their Applications XI
+UR  - https://link.springer.com/10.1007/978-3-031-21131-7
+Y2  - 2025/03/06/10:16:01
+ER  - 
+
+TY  - CONF
+TI  - Evaluating Player’s Passing Ability based on Passing Network:
+AU  - Zhipei, Zhang
+AU  - Pan, Bingyu
+T2  - 9th International Conference on Sport Sciences Research and Technology Support
+AB  - Soccer, Passing Network, Players’ Value, Machine Learning.
+C1  - Online Streaming, --- Select a Country ---
+C3  - Proceedings of the 9th International Conference on Sport Sciences Research and Technology Support
+DA  - 2021///
+PY  - 2021
+DO  - 10.5220/0010711400003059
+DP  - DOI.org (Crossref)
+SP  - 69
+EP  - 75
+LA  - en
+PB  - SCITEPRESS - Science and Technology Publications
+SN  - 978-989-758-539-5
+ST  - Evaluating Player’s Passing Ability based on Passing Network
+UR  - https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0010711400003059
+Y2  - 2025/03/08/19:18:43
+ER  - 
+
+TY  - JOUR
+TI  - Trajectories through temporal networks
+AU  - Mattsson, Carolina E. S.
+AU  - Takes, Frank W.
+T2  - Applied Network Science
+AB  - What do football passes and financial transactions have in common? Both are networked walk processes that we can observe, where records take the form of timestamped events that move something tangible from one node to another. Here we propose an approach to analyze this type of data that extracts the actual trajectories taken by the tangible items involved. The main advantage of analyzing the resulting trajectories compared to using, e.g., existing temporal network analysis techniques, is that sequential, temporal, and domain-specific aspects of the process are respected and retained. As a result, the approach lets us produce contextually-relevant insights. Demonstrating the usefulness of this technique, we consider passing play within association football matches (an unweighted process) and e-money transacted within a mobile money system (a weighted process). Proponents and providers of mobile money care to know how these systems are used—using trajectory extraction we find that 73% of e-money was used for stand-alone tasks and only 21.7% of account holders built up substantial savings at some point during a 6-month period. Coaches of football teams and sports analysts are interested in strategies of play that are advantageous. Trajectory extraction allows us to replicate classic results from sports science on data from the 2018 FIFA World Cup. Moreover, we are able to distinguish teams that consistently exhibited complex, multi-player dynamics of play during the 2017–2018 club season using ball passing trajectories, coincidentally identifying the winners of the five most competitive first-tier domestic leagues in Europe.
+DA  - 2021/12//
+PY  - 2021
+DO  - 10.1007/s41109-021-00374-7
+DP  - DOI.org (Crossref)
+VL  - 6
+IS  - 1
+SP  - 35
+J2  - Appl Netw Sci
+LA  - en
+SN  - 2364-8228
+UR  - https://appliednetsci.springeropen.com/articles/10.1007/s41109-021-00374-7
+Y2  - 2025/03/13/11:37:30
+ER  - 
+
+TY  - JOUR
+TI  - Predicting soccer matches with complex networks and machine learning
+AU  - Baratela, Eduardo Alves
+AU  - Xavier, Felipe Jordão
+AU  - Peron, Thomas
+AU  - Ribeiro Villas-Boas, Paulino
+AU  - Rodrigues, Francisco Aparecido
+T2  - Journal of Complex Networks
+AB  - Abstract
+            Soccer attracts the attention of many researchers and professionals in the sports industry. Therefore, the incorporation of science into the sport is constantly growing, with increasing investments in performance analysis and sports prediction industries. This study aims to (i) highlight the use of complex networks as an alternative tool for predicting soccer match outcomes and (ii) show how the combination of structural analysis of passing networks with match statistical data can provide deeper insights into the game patterns and strategies used by teams. In order to do so, complex network metrics and match statistics were used to build machine learning models that predict the wins and losses of soccer teams in different leagues. The results showed that models based on passing networks were as effective as ‘traditional’ models, which use general match statistics. Another finding was that by combining both approaches, more accurate models were obtained than when they were used separately, demonstrating that the fusion of such approaches can offer a deeper understanding of game patterns, allowing the comprehension of tactics employed by teams relationships between players, their positions and interactions during matches. It is worth mentioning that both network metrics and match statistics were important and impactful for the mixed model. Furthermore, the use of networks with a lower granularity of temporal evolution (such as creating a network for each half of the match) performed better than a single network for the entire game.
+DA  - 2024/10/23/
+PY  - 2024
+DO  - 10.1093/comnet/cnae043
+DP  - DOI.org (Crossref)
+VL  - 12
+IS  - 6
+SP  - cnae043
+LA  - en
+SN  - 2051-1329
+UR  - https://academic.oup.com/comnet/article/doi/10.1093/comnet/cnae043/7876230
+Y2  - 2025/03/14/15:58:58
+ER  - 
+
+TY  - CHAP
+TI  - Similarity of Football Players Using Passing Sequences
+AU  - Barbosa, Alberto
+AU  - Ribeiro, Pedro
+AU  - Dutra, Inês
+T2  - Machine Learning and Data Mining for Sports Analytics
+AB  - Association football has been the subject of many research studies. In this work we present a study on player similarity using passing sequences extracted from games from the top-5 European football leagues during the 2017/2018 season. We present two diﬀerent approaches: ﬁrst, we only count the motifs a player is involved in; then we also take into consideration the speciﬁc position a player occupies in each motif. We also present a new way to objectively judge the quality of the generated models in football analytics. Our results show that the study of passing sequences can be used to study player similarity with relative success.
+CY  - Cham
+DA  - 2022///
+PY  - 2022
+DP  - DOI.org (Crossref)
+VL  - 1571
+SP  - 51
+EP  - 61
+LA  - en
+PB  - Springer International Publishing
+SN  - 978-3-031-02043-8 978-3-031-02044-5
+UR  - https://link.springer.com/10.1007/978-3-031-02044-5_5
+Y2  - 2025/03/16/13:06:40
+ER  - 
+
+TY  - CONF
+TI  - A new look into Oﬀ-ball Scoring Opportunity: taking into account the continuous nature of the game
+AU  - Rios-Neto, Hugo M R
+AU  - Jr, Wagner Meira
+AU  - Vaz-de-Melo, Pedro O S
+T2  - Analytics in Sports tomorrow
+AB  - With the rise of tracking data, sports analytics can inﬂuence the game’s tactical aspects like never before. In football, measuring the quality of the players’ positioning to receive a pass in condition to score has much value. The Oﬀ-Ball Scoring Opportunity model was built to do just that. With that, players receive credit for being well-positioned to score, even if a teammate cannot get them the ball. It was originally modeled to consider the game’s snapshot only when a player executes an action. However, football is a continuous sport, where decision-making happens at all times, and actions are not discretized as in sports such as baseball and American football. In this paper, we propose a reinterpretation of the original model, where the Oﬀ-Ball Scoring Opportunity is calculated for every timestep an attacking player has the ball at his feet. It makes sense, since as long as a player has control of the ball, he can move it somewhere else on the pitch. Through this new form of applying the Oﬀ-Ball Scoring Opportunity model, we can build time-series that represent the scoring probability of the next on-ball event at any given moment in time. Later, we demonstrate how this way of using the model oﬀers a much more in-depth view of attacking creation at an individual and team level.
+DA  - 2020///
+PY  - 2020
+DP  - Zotero
+LA  - en
+ER  - 
+
+TY  - JOUR
+TI  - Transformer-based neural marked spatio temporal point process model for analyzing football match events
+AU  - Yeung, Calvin
+AU  - Sit, Tony
+AU  - Fujii, Keisuke
+T2  - Applied Intelligence
+AB  - Predictive modeling plays a crucial role in machine learning, data analysis, and statistics. In sports, predictive modeling methods have emerged to provide insights and evaluate performances based on key performance metrics. However, most existing models tend to focus on predicting only partial aspects of an event, such as the outcome, action type, or location, while neglecting the temporal factors involved. To address this gap, this study introduces the Transformer-Based Neural Marked Spatio-Temporal Point Process (NMSTPP) model, speciﬁcally designed for football event data. The NMSTPP model predicts a comprehensive set of future event components, including inter-event time, zone, and action. Additionally, it features a dependent prediction layers architecture to enhance model performance. The Holistic Possession Utilization Score (HPUS) metric is also proposed to evaluate the effectiveness and efﬁciency of possession periods in football based on the NMSTPP model. With open-source football event data, the NMSTPP model successfully predicted the aforementioned three components of future events, with an improvement of up to 4% overall and 9% for individual components compared to baseline models. The HPUS demonstrated a 0.9 correlation with existing performance metrics, highlighting its utility in performance evaluation. The NMSTPP and HPUS were applied to the Premier League to demonstrate their practical feasibility.
+DA  - 2025/04//
+PY  - 2025
+DO  - 10.1007/s10489-024-05996-9
+DP  - DOI.org (Crossref)
+VL  - 55
+IS  - 5
+SP  - 335
+J2  - Appl Intell
+LA  - en
+SN  - 0924-669X, 1573-7497
+UR  - https://link.springer.com/10.1007/s10489-024-05996-9
+Y2  - 2025/04/13/15:30:18
+ER  - 
+
+TY  - CONF
+TI  - A Machine Learning Model to Predict Player’s Positions based on Performance:
+AU  - Zeng, Zixue
+AU  - Pan, Bingyu
+T2  - 9th International Conference on Sport Sciences Research and Technology Support
+AB  - Football, Association Football Positions, BP Neural Network, Machine Learning.
+C1  - Online Streaming, --- Select a Country ---
+C3  - Proceedings of the 9th International Conference on Sport Sciences Research and Technology Support
+DA  - 2021///
+PY  - 2021
+DO  - 10.5220/0010653300003059
+DP  - DOI.org (Crossref)
+SP  - 36
+EP  - 42
+LA  - en
+PB  - SCITEPRESS - Science and Technology Publications
+SN  - 978-989-758-539-5
+ST  - A Machine Learning Model to Predict Player’s Positions based on Performance
+UR  - https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0010653300003059
+Y2  - 2025/04/14/13:57:51
+ER  - 
+
+TY  - BOOK
+TI  - Machine Learning and Data Mining for Sports Analytics: 8th International Workshop, MLSA 2021, Virtual Event, September 13, 2021, Revised Selected Papers
+AU  - Sattari, Arsalan
+AU  - Johansson, Ulf
+AU  - Wilderoth, Erik
+AU  - Jakupovic, Jasmin
+AU  - Larsson-Green, Peter
+T2  - Communications in Computer and Information Science
+CY  - Cham
+DA  - 2022///
+PY  - 2022
+DP  - DOI.org (Crossref)
+VL  - 1571
+LA  - en
+PB  - Springer International Publishing
+SN  - 978-3-031-02043-8 978-3-031-02044-5
+ST  - Machine Learning and Data Mining for Sports Analytics
+UR  - https://link.springer.com/10.1007/978-3-031-02044-5
+Y2  - 2025/04/16/11:59:43
+ER  - 
+
+TY  - JOUR
+TI  - Plus-minus models for evaluating and scouting soccer players using possession sequences
+AU  - Bajons, Robert
+AU  - Hornik, Kurt
+DP  - Zotero
+LA  - en
+ER  - 
+
+TY  - JOUR
+TI  - Visually-supported topic modeling for understanding behavioral patterns from spatio–temporal events
+AU  - Moussavi, Laleh
+AU  - Andrienko, Gennady
+AU  - Andrienko, Natalia
+AU  - Slingsby, Aidan
+T2  - Computers & Graphics
+DA  - 2025/06//
+PY  - 2025
+DO  - 10.1016/j.cag.2025.104245
+DP  - DOI.org (Crossref)
+VL  - 129
+SP  - 104245
+J2  - Computers & Graphics
+LA  - en
+SN  - 00978493
+UR  - https://linkinghub.elsevier.com/retrieve/pii/S009784932500086X
+Y2  - 2025/06/01/11:36:53
+ER  - 
+
