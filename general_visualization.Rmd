@@ -1,0 +1,314 @@
+---
+title: "Visualization"
+output: html_document
+date: "2025-05-20"
+---
+
+```{r}
+################ load main data set ######################
+library(readxl)
+Visualization_data <- read_excel("~/Dokumente/Studium Bachelor Sport und Leistung/Bachelorarbeit/included_articles.xlsx")
+```
+
+
+```{r}
+###################### Timeline ########################
+# transformation of the year variable 
+#Visualization_data$year <- as.factor(Visualization_data$year)
+# timeline of usage 
+#library(tidyverse)
+#ggplot(Visualization_data, aes(x = year)) +
+  #geom_bar(fill = "steelblue", width = 0.6)+
+  #scale_y_continuous(breaks = seq(0, 16, by = 2))+
+  #labs(title = "Timeline of included publications", x = "Year", y = "Number of publications")+
+  #theme(plot.title = element_text(hjust = 0, size = 20))
+```
+```{r}
+##################### Classification of area of application and method ################################
+# datapreparation for classification
+library(dplyr)
+library(tidyr)
+
+# long fomat: because in some papers we have more than 1 classification 
+df_long_classification <- Visualization_data %>%
+  pivot_longer(
+    cols = c(`area_of_​​application_classification1`, `area_of_​​application_classification2`,
+             method_classification1, method_classification2),
+    names_to = c(".value", "set"),
+    names_pattern = "(.*)_classification(\\d)"
+  )
+# export of excel file 
+library(openxlsx)
+write.xlsx(df_long_classification, file = "~/Dokumente/Studium Bachelor Sport und Leistung/Bachelorarbeit/df_long_classification.xlsx")
+```
+
+
+```{r}
+# Visualization classification of area of application 
+library(tidyverse)
+
+# datapreparation (count numbers)
+df_counted_area_application <- df_long_classification %>%
+  filter(!is.na(`area_of_​​application`)) %>%
+  count(`area_of_​​application`) %>%
+  mutate(`area_of_​​application` = factor(`area_of_​​application`))
+
+# Labels for y-axis (classifications)
+label_map_area_application <- c(
+  "player evaluation" = "Player Evaluation",
+  "outcome prediction" = "Outcome Prediction",
+  "economic and social theories" = "Economic and Social Theories",
+  "visualization and explainability" = "Visualization and Explainability",
+  "tactic analysis" = "Tactic Analysis",
+  "other" = "Other"
+)
+
+# create first plot (classification for area of application)
+p1 <- ggplot(df_counted_area_application, aes(x = n, y = fct_reorder(`area_of_​​application`, n))) +
+  geom_bar(stat = "identity", fill = "steelblue", width = 0.6) +
+  labs( x = "Number of publications", y = "") +
+  scale_x_continuous(breaks = seq(0, 16, by = 2)) +
+  scale_y_discrete(labels = label_map_area_application) +
+  theme(
+    axis.text.y = element_text(size = 11, color = "black"),
+    axis.text.x = element_text(size = 12)
+  )
+```
+
+
+```{r}
+# Visualization classification of method
+library(tidyverse)
+library(patchwork)
+
+# datapreparation (count the numbers)
+df_counted_method <- df_long_classification %>%
+  filter(!is.na(method)) %>%
+  count(method) %>%
+  mutate(method = factor(method))
+
+# labels for y-axis (classifications)
+label_map_method <- c("classic statistical methods" = "Classic Statistical Methods",
+                      "machine learning" = "Machine Learning",
+                      "network analysis" = "Network Analysis",
+                      "other" = "Other",
+                      "visual analytics" = "Visual Analytics"
+                      )
+# create second plot (classifications for methods)
+p2 <- ggplot(df_counted_method, aes(x = n, y = fct_reorder(method, n))) +
+  geom_bar(stat = "identity", fill = "tomato", width = 0.6) +
+  labs(x = "Number of publications", y = "") +
+  scale_x_continuous(breaks = seq(0, 28, by = 2)) +
+  scale_y_discrete(labels = label_map_method) +
+  theme(
+    axis.text.y = element_text(size = 11, color = "black"),
+    axis.text.x = element_text(size = 12)
+    )
+# combine the two plots
+classification_dist <- p1 / p2
+
+# export of png file 
+ggsave(
+  filename = "~/Dokumente/Studium Bachelor Sport und Leistung/Bachelorarbeit/final visualizations/classification.png",
+  plot = classification_dist,
+  width = 10, height = 6, dpi = 400
+)
+```
+
+```{r}
+##################### Alluvial Diagram ################################
+library(dplyr)
+library(tidyr)
+
+df_long_alluvial <- df_long_classification %>%
+  group_by(grp = cumsum(set == 1)) %>%   # group each set 1 with the corresponding set 2
+  mutate(
+    `area_of_​​application` = ifelse(
+      set == 2 & `area_of_​​application` == "",
+      `area_of_​​application`[set == 1],
+      `area_of_​​application`
+    ),
+    method = ifelse(
+      set == 2 & method == "",
+      method[set == 1],
+      method
+    )
+  ) %>%
+  ungroup() %>%
+  filter(!(set == 2 & `area_of_​​application` == "" & method == "")) %>%  # delete empty lines of set 2
+  select(-grp) %>%
+  fill(`area_of_​​application`, method, .direction = "down")  # fill NAs with value from cell above 
+
+# export of excel file
+library(openxlsx)
+write.xlsx(df_long_alluvial, file = "~/Dokumente/Studium Bachelor Sport und Leistung/Bachelorarbeit/df_long_alluvial.xlsx")
+```
+
+
+
+```{r}
+library(dplyr)
+
+# label preparation 
+area_labels <- c(
+  "other" = "Other",
+  "outcome prediction" = "Outcome Prediction",
+  "player evaluation" = "Player Evaluation",
+  "economic and social theories" = "Economic and Social Theories",
+  "tactic analysis" = "Tactic Analysis",
+  "visualization and explainability" = "Visualization and Explainability"
+)
+method_labels <- c(
+  "classic statistical methods" = "Classic Stat Methods",
+  "machine learning" = "Machine Learning",
+  "network analysis" = "Network Analysis",
+  "other" = "Other",
+  "visual analytics" = "Visual Analytics"
+)
+
+# rename categories (standardize)
+df_long_alluvial <- df_long_alluvial %>%
+  mutate(
+    `area_of_​​application` = recode(as.character(`area_of_​​application`), !!!area_labels),
+    method = recode(as.character(method), !!!method_labels)
+  )
+
+# mutate "method" into factor (levels)
+df_long_alluvial$method <- factor(
+  df_long_alluvial$method,
+  levels = c(
+    "Other",
+    "Classic Stat Methods",
+    "Machine Learning",
+    "Network Analysis",
+    "Visual Analytics"
+  )
+)
+
+```
+
+```{r}
+# Visualization Alluvial Diagram 
+library(tidyverse)
+library(ggalluvial)
+
+# plot the Alluvial diagram
+alluvial<- ggplot(df_long_alluvial,
+       aes(axis1 = year, axis2 = `area_of_​​application`, axis3 = method,
+           y = 1))+
+  geom_alluvium(aes(fill = method), width = 0.4) +
+  geom_stratum(data = subset(df_long_alluvial, !is.na(year)),
+               aes(x = "Year", stratum = year),
+               width = 0.15,
+               fill = "gray90", color = "black") +
+  geom_stratum(data = subset(df_long_alluvial, !is.na(`area_of_​​application`)),
+               aes(x = "Area of Application", stratum = `area_of_​​application`),
+               width = 0.4,
+               fill = "gray80", color = "black") +
+  
+   geom_stratum(data = subset(df_long_alluvial, !is.na(method)),
+               aes(x = "Method", stratum = method, fill = method),
+               width = 0.4,
+               color = "black", alpha = 0.4)+
+   geom_text(stat = "stratum", 
+            aes(label = after_stat(stratum)), 
+            size = 3, show.legend = FALSE) +
+  scale_x_discrete(limits = c("Year", "Area of Application", "Method"),
+                   expand = c(.05, .05)) +
+  labs(title = NULL, x = NULL, y = NULL , fill = "Method") +
+    theme_gray() +
+  theme(
+    axis.text.x = element_text(size = 11, color = "black"),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    legend.position = "none"
+  )
+
+# export of png file 
+ggsave(
+  filename = "~/Dokumente/Studium Bachelor Sport und Leistung/Bachelorarbeit/final visualizations/alluvial.png",
+  plot = alluvial,
+  width = 10, height = 6, dpi = 400
+)
+
+```
+
+
+
+```{r}
+###################### Heatmap of variables ########################
+#library(tidyverse)
+#Dataprep: delete the unnecessary variables 
+#data_heatmap <- Visualization_data %>% select(-Titel, -Author, -Journal, -`Conference paper`, -year, -`area_of_​​application_classification2`, -method_classification1, -method_classification2, -`How was data used?`, -combination_dataset, -variable)
+#long format
+#data_heatmap <- data_heatmap %>%
+  #pivot_longer(-`area_of_​​application_classification1`, names_to = "variable", values_to = "used")
+#count number of variables for each area of application
+#agg <- data_heatmap %>%
+  #group_by(`area_of_​​application_classification1`, variable) %>%
+  #summarise(count = sum(used), .groups = "drop")
+```
+
+```{r}
+#Visualization of Heatmap
+#library(tidyverse)
+#ggplot(agg, aes(x = variable, y = `area_of_​​application_classification1`, fill = count)) +
+  #geom_tile(color = "white") +
+  #geom_text(aes(label = count), color = "black", size = 4) +
+  #scale_fill_gradient(low = "grey", high = "#1f78b4") +
+  #labs(
+    #title = "Usage of variables by area of application",
+    #x = "Variable",
+    #y = "area of application",
+    #fill = "Number"
+  #) +
+  #theme_minimal() +
+  #theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+###################### Journal/ Conference Analysis ##########################
+library(dplyr)
+library(tidyr)
+
+# long fomat: because in some papers we have more than 1 journal categories  
+df_long_categorization <- Visualization_data %>%
+  pivot_longer(
+    cols = c(Category_Conf_Journal1, Category_Conf_Journal2),
+    names_to = "set",
+    values_to = "category"
+  )
+
+
+df_clean_categorization <- df_long_categorization %>%
+  filter(!is.na(category)) %>%              
+  count(category, name = "n") %>%           # count number of category
+  mutate(total = sum(n),                    # calculate overall number
+         percent = n / total,               # calculate percentage 
+         label_category = paste0(category, " (", scales::percent(percent), ")") # create labels 
+         )               
+
+
+
+```
+
+
+
+```{r}
+# plot the diagram 
+library(tidyverse)
+journal_conference <- ggplot(df_clean_categorization, aes(x = "", y = percent, fill = label_category)) +
+  geom_col(width = 1, color = "black") +
+  coord_polar(theta = "y") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(fill = "Category") +
+  theme_void()
+
+# export of png file 
+ggsave(
+  filename = "~/Dokumente/Studium Bachelor Sport und Leistung/Bachelorarbeit/final visualizations/journal_conference.png",
+  plot = journal_conference,
+  width = 10, height = 6, dpi = 400
+)
+```
+
