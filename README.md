@@ -14,4 +14,4 @@ The [plots](/plots) folder contains all visualizations generated during the anal
 The [scripts](/scripts) folder contains the complete analysis scripts for the systematic review and the bibliometric analysis. 
 
 ## *License*
-This project uses a CC-BY 4.0 [Linktext](https://creativecommons.org/licenses/by/4.0/) license, which also applies to all data published in this repository.
+This project uses a [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, which also applies to all data published in this repository.
